@@ -38,7 +38,7 @@ public class Kwft_document_extraction {
         Connection DBConnection = null;
         String strDBConnectionUrl = "jdbc:sqlserver://127.0.0.1:1433;databaseName=ILAB_DEMO_DB";
         String strUser = "sa";
-        String strPassword = "slyfox37337";
+        String strPassword = "password";
         String strQuery = "select distinct b.documentid, a.EMPLOYEE_NAME, b.LOCATION, b.VERSIONNUMBER,b.FILENAME, replace(replace(b.LOCATION, '/', '\\'), '\\sonora', 'c:\\sonora') as proper_filename from FS_STAFF_DOCS a inner join SONORASTRGELEMENTS b on a.DOCUMENTID = b.DOCUMENTID";
         Statement DBStatement;
         ResultSet myResults;
